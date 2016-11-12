@@ -3,13 +3,16 @@
 
 # DATASOFA
 DATASOFA是一个部署后；新建表格；添加几行代码就可以直接对数据库的表格实现增删改查操作的后台服务工具。
+
 ## 功能简介
 datasofa是组合 http://www.grocerycrud.com/ crud  和 ci 框架，并添加了一个简单的后台管理框架的一个CRUD管理后台。它包含了一键部署的源代码和实例数据库以及nginx的配置文件，即使你是一个初学者也能很快部署使用。
  ![image](https://github.com/whomm/datasofa/raw/master/screenshot/screenshot.png)
+
 ## 适用环境
 1. 如果仅对数据库表格进行数据的增删改查操作，可以直接使用该工具。
 2. 如果增删改查涉及简单的表格关联，该工具也可以直接支持。
 3. 使用者了解一点php，知道mysql数据库，服务器配置好了php和nginx的环境。
+
 ## 安装步骤
 1. cd 到部署路径 git clone https://github.com/whomm/datasofa ./
 2. 创建mysql的数据库datasofa并导入当前文件夹的import.sql文件
@@ -21,6 +24,7 @@ datasofa是组合 http://www.grocerycrud.com/ crud  和 ci 框架，并添加了
     3. $db['default']['password'] = '';
 6. 打开浏览器输入：http://127.0.0.1/即可看到已经添加的示例。
 7. 输入http://127.0.0.1/index.php/Examples/index 可以看到grocerycrud提供的示例。
+
 ## 使用示例
 1. 创建表格
 ```
@@ -95,6 +99,7 @@ public function book()
 
 ## 延伸问题
 1. 权限管理 datasofa并没有提供权限管理的功能，后续可能会支持。如果是内网简单使用该功能，建议使用nginx提供的权限验证，添加一个密码校验。
+
 ## 可以改进的地方
 1. 表的字段注释直接作为展现时候的列名称。
 2. 简单的权限管理。
