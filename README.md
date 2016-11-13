@@ -17,7 +17,7 @@ datasofa是组合 http://www.grocerycrud.com/ crud  和 ci 框架，并添加了
 1. cd 到部署路径 git clone https://github.com/whomm/datasofa ./
 2. 创建mysql的数据库datasofa并导入当前文件夹的import.sql文件
 3. 复制nginx.conf的内容添加到机器的nginx的配置文件中。注意：里面提示的需要修改的地方。
-4. 如果配置的nginx的端口不是80.修改 application/config/config.php 中的 $config['base_url'] 。例如修改成 http://127.0.0.1:8090。
+4. 如果配置的nginx的端口不是80.修改 application/config/config.php 中的 $config['base_url'] 。例如修改成 http://127.0.0.1:8090。注意重新加载nginx配置。
 5. 修改application/config/database.php 中的
     1. $db['default']['hostname'] = 'localhost:3306';
     2. $db['default']['username'] = '';
@@ -105,4 +105,6 @@ public function book()
 2. 简单的权限管理。
 3. 自动生成简单的api数据查询接口。
 
-
+## 联系方式
+1. Email: lacing@126.com
+2. QQ Group: 544670985
